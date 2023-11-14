@@ -84,6 +84,10 @@
 // console.log(b); // undefined : var defined but value not assigned
 // console.log(a); // ReferenceError: a is not defined 
 // var b;
+
+
 console.log(typeof(c) === undefined) // doubt
 var c = undefined;
 console.log(c === undefined)
+
+print() //pdf print
