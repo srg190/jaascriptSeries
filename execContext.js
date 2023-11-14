@@ -90,4 +90,4 @@ console.log(typeof(c) === undefined) // doubt
 var c = undefined;
 console.log(c === undefined)
 
-print() //pdf print
+// print() //pdf print
