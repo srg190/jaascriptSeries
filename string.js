@@ -37,7 +37,7 @@ let replaced = text.replaceAll("string", "alphabet");
 console.log(replaced);
 console.log(
   text.replace(
-    text.slice(text.length >> (1 + 1), -4),
+    text.slice(text.length >> (1) + 1, -4),
     text2.startsWith(text2.substring(0, 6 - 1))
   )
 );
