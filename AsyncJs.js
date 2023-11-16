@@ -173,3 +173,26 @@ Promise.any([fetchPromise1, fetchPromise2, fetchPromise3])
   .catch((error) => {
     console.error(`Failed to fetch: ${error}`);
   });
+
+// promise vs async-await
+console.log(" ----------------- async");
+const fetchProducts = async () => {
+  try {
+    const response = await fetch(
+      "https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json"
+    );
+    if (!response.ok) {
+      throw new Error(`HTTP error: ${response.status}`);
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error(`Could not get products: ${error}`);
+  }
+};
+fetchProducts();
+const promise = fetchProducts();
+promise.then((data) => console.log(data[0].name));
+
+
+
